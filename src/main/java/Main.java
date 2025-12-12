@@ -7,5 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String cmd = sc.next();
         System.out.println(cmd + ": command not found");
+
+        while(true){
+            System.out.print("$ ");
+            String input = sc.next();
+            System.out.println(input+": command not found");
+        }
     }
 }
