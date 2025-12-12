@@ -11,11 +11,12 @@ public class Main {
         while(true){
             System.out.print("$ ");
             String input = sc.next();
-            if(input != "exit") {
-                System.out.println(input + ": command not found");
+            if(input == "exit") {
+                System.exit(0);
+
             }
             else{
-                System.exit(0);
+                System.out.println(input + ": command not found");
             }
         }
     }
