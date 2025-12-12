@@ -10,7 +10,7 @@ public class Main {
 
         while(true){
             System.out.print("$ ");
-            String input = sc.next();
+            String input = sc.nextLine();
             if(input.equals("exit")) {
                 System.exit(0);
 
