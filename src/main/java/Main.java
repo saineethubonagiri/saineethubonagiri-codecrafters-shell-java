@@ -11,7 +11,7 @@ public class Main {
         while(true){
             System.out.print("$ ");
             String input = sc.next();
-            if(input == "exit") {
+            if(input.equals("exit")) {
                 System.exit(0);
 
             }
