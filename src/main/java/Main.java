@@ -19,6 +19,15 @@ public class Main {
             else if(word.equals("echo")){
                 System.out.println(input.substring(5));
             }
+            else if(word.equals("type")){
+                String word2 = input.substring(5,9);
+                if(word2.equals("echo") || word2.equals("exit")){
+                    System.out.println(word2 + " is a shell builtin");
+                }
+                else{
+                    System.out.println(word2 + ": not found");
+                }
+            }
             else {
                 System.out.println(input + ": command not found");
             }
