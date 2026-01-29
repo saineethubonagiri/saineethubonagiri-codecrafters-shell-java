@@ -11,11 +11,12 @@ public class Main {
         while(true){
            System.out.print("$ ");
             String input = sc.nextLine();
+            String word = input.substring(0,4);
             if(input.equals("exit")) {
                 System.exit(0);
 
             }
-            else{
+            else if(word.equals("echo")){
                 System.out.println(input.substring(5));
             }
         }
