@@ -19,6 +19,9 @@ public class Main {
             else if(word.equals("echo")){
                 System.out.println(input.substring(5));
             }
+            else {
+                System.out.println("invalid_grape_command: command not found");
+            }
         }
     }
 }
