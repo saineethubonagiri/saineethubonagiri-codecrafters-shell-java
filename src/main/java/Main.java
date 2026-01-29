@@ -21,7 +21,7 @@ public class Main {
             }
             else if(word.equals("type")){
                 String word2 = input.substring(5,9);
-                if(word2.equals("echo") || word2.equals("exit")){
+                if(word2.equals("echo") || word2.equals("exit") || word2.equals("type")){
                     System.out.println(word2 + " is a shell builtin");
                 }
                 else{
